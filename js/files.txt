@@ -1,0 +1,3 @@
+bvi.min.js - версия для слабовидящих
+$ npm install bvi
+
