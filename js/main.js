@@ -47,6 +47,14 @@ function toggleArrow($arrow) {
 
 $(document).ready(function () {
 
+    new isvek.Bvi({
+        target: '.vijoin',
+        fontSize: 24,
+        theme: 'black',
+        panelFixed: true,
+        lang: 'ru-RU'
+    });
+
 
     // Обработчик клика по заголовкам
     $('.accordion-header').on('click', function () {
@@ -303,6 +311,17 @@ $(document).ready(function () {
 
 
 $(document).ready(function () {
+
+    new isvek.Bvi({
+        target: '.vijoin',
+        fontSize: 24,
+        theme: 'black',
+        panelFixed: true,
+        lang: 'ru-RU'
+    });
+
+
+
     $('.header__burger').click(function () {
         $('.header__burger,.menu').toggleClass('active');
         $('body').toggleClass('lock');
