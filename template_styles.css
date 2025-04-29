@@ -2197,7 +2197,8 @@ section.content_items {
 .about_top_links {
   margin: 32px 0;
 }
-.bonus_prog{
+
+.bonus_prog {
   background: linear-gradient(126.56deg, #D14741 10.02%, #F9C8B6 97.4%);
   border-radius: 22px;
   min-height: 250px;
@@ -2205,12 +2206,13 @@ section.content_items {
   position: relative;
   margin-bottom: 8px;
 }
-.bonus_prog__wrap{
+
+.bonus_prog__wrap {
   color: #fff;
   object-fit: cover;
 }
 
-.bonus_prog__wrap a{
+.bonus_prog__wrap a {
   display: block;
   height: 100%;
   width: 100%;
@@ -2226,12 +2228,12 @@ section.content_items {
   border-radius: 22px;
 }
 
-.bonus_prog__wrap h2{
+.bonus_prog__wrap h2 {
   padding: 20px;
   color: #fff;
 }
 
-.spravka_ndfl{
+.spravka_ndfl {
   background: #4FB2C0;
   border-radius: 22px;
   height: 100%;
@@ -2239,12 +2241,13 @@ section.content_items {
   position: relative;
   margin-bottom: 8px;
 }
-.spravka_ndfl__wrap{
+
+.spravka_ndfl__wrap {
   color: #fff;
   object-fit: cover;
 }
 
-.spravka_ndfl__wrap a{
+.spravka_ndfl__wrap a {
   display: block;
   height: 100%;
   width: 100%;
@@ -2260,24 +2263,25 @@ section.content_items {
   border-radius: 22px;
 }
 
-.spravka_ndfl__wrap h2{
+.spravka_ndfl__wrap h2 {
   padding: 20px;
   color: #fff;
 }
 
-.pravov_info{
+.pravov_info {
   background: #2375A6;
   border-radius: 22px;
   height: 100%;
   min-height: 90px;
   position: relative;
 }
-.pravov_info__wrap{
+
+.pravov_info__wrap {
   color: #fff;
   object-fit: cover;
 }
 
-.pravov_info__wrap a{
+.pravov_info__wrap a {
   display: block;
   height: 100%;
   width: 100%;
@@ -2292,7 +2296,7 @@ section.content_items {
   border-radius: 22px;
 }
 
-.pravov_info__wrap h2{
+.pravov_info__wrap h2 {
   padding: 20px;
   color: #fff;
 }
@@ -2304,36 +2308,45 @@ section.content_items {
   border-radius: 22px;
   margin: 32px 0;
 }
-.about_asset ul{
+
+.about_asset ul {
   padding-left: 20px;
 }
-.about_asset li{
+
+.about_asset li {
   list-style: disc;
 }
 
-.about_team_carousel__item .doctor_card__photo{
+.about_team_carousel__item .doctor_card__photo {
   padding-right: 0;
 }
+
 .about_page__head {
   margin: 32px 0 20px 0;
   display: grid;
   grid-template-columns: repeat(2, auto);
   justify-items: stretch;
 }
-.about_page__head h2{
+
+.about_page__head h2 {
   align-self: center;
   margin: 0;
 }
-.about_page__head a{
+
+.about_page__head a {
   align-self: center;
   margin: 0;
   padding: 0;
   justify-self: end;
 }
-.about_page__head p{
+
+.about_page__head p {
   grid-column: 1 / 2 span;
 }
-.equipment, .text_laboratoriya, .about_team {
+
+.equipment,
+.text_laboratoriya,
+.about_team {
   margin: 32px 0;
 }
 
@@ -2347,7 +2360,12 @@ section.content_items {
   overflow: hidden;
   display: grid;
 }
-.bonus_card p, .bonus_card .doctor_info__anchor_list {
+.bonus_card .anchor_list{
+  margin: 20px 20px;
+}
+
+.bonus_card p,
+.bonus_card .doctor_info__anchor_list {
   padding: 20px;
 }
 
@@ -2361,18 +2379,24 @@ section.content_items {
 .bonus_if {
   text-align: center;
 }
+
 .bonus_if .sec1 {
   background-color: #F9C8B6;
 }
+
 .bonus_if .sec3 {
   background-color: #FEE6C5;
 }
+
 .bonus_if_icon {
   height: 42px;
   width: 42px;
   margin: 0 auto;
 }
-.sec1 p, .sec2 p, .sec3 p{
+
+.sec1 p,
+.sec2 p,
+.sec3 p {
   margin-top: 8px;
 }
 
@@ -2382,39 +2406,129 @@ section.content_items {
   border-radius: 22px;
 }
 
-.bonus_conditions img {
+.bonus_condition__img {
   display: none;
 }
+
 .bonus_conditions__item {
   border: 1.06px solid #CECECE;
   border-radius: 22px;
 }
+
 .bonus_conditions .bonus_conditions__item:nth-child(2) {
   margin-bottom: 20px;
 }
+
 .bonus_conditions__top {
   background-color: #F8F8F8;
   border-radius: 22px 22px 0 0;
   padding: 20px;
   text-align: center;
 }
-.bonus_conditions__top h3{
+
+.bonus_conditions__top h3 {
   margin: 0;
 }
+
 .bonus_conditions__buttom {
   background-color: #fff;
   border-radius: 0 0 22px 22px;
   padding: 20px;
 }
-.bonus_conditions__buttom ul{
+
+.bonus_conditions__buttom ul {
   display: grid;
   grid-template-columns: repeat(2, auto);
   gap: 8px;
 }
+
 .how_spend_bonuses {
   margin: 32px 0;
 }
+.bonus_conditions__img {
+  display: none;
+}
 /*---бонусная программа---*/
+/*контакты*/
+
+.contacts_coordinat {
+  display: grid;
+  gap: 20px;
+}
+
+.contacts_coordinat__map {
+  border: 1.06px solid #CECECE;
+  border-radius: 22px;
+  overflow: hidden;
+}
+
+/*убрать потом*/
+.contacts_coordinat__map img {
+  min-height: 100%;
+  width: auto;
+  display: block;
+}
+
+.contacts_coordinat__adress {
+  border: 1.06px solid #CECECE;
+  border-radius: 22px;
+  padding: 20px;
+}
+
+.contacts_coordinat__adress_item {
+  margin-bottom: 8px;
+}
+
+.contacts_coordinat__adress_item h3 {
+  margin-bottom: 8px;
+}
+
+
+.quality_service {
+  margin-top: 20px;
+  background: linear-gradient(0deg, #F9C8B6, #F9C8B6),
+    linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
+  border-radius: 22px;
+  padding: 22px;
+}
+
+.quality_service a {
+  display: block;
+  margin-top: 8px;
+}
+
+.link_other_filial__item.bac_border {
+  padding: 0;
+}
+
+.other_filial__item_img {
+  overflow: hidden;
+  object-fit: cover;
+  border-radius: 22px;
+}
+
+.other_filial__item_img {
+  max-height: 150px;
+}
+
+.other_filial__item_coordinat {
+  padding: 20px;
+  flex: 1;
+}
+
+.other_filial__item_coordinat a {
+  display: block;
+}
+
+/*---контакты---*/
+
+/*отзывы*/
+.send__reviews {
+  margin: 32px 0;
+}
+
+/*---отзывы---*/
+
 /*footer*/
 .footer {
   background-color: #F8F8F8;
@@ -2643,7 +2757,8 @@ section.content_items {
     border-radius: 35px;
     background-color: #F8F8F8;
   }
-  .service__item a{
+
+  .service__item a {
     padding: 25px 4px;
   }
 
@@ -2875,6 +2990,49 @@ section.content_items {
   }
 
   /*---акции и новости------*/
+  /*контакты*/
+
+  .contacts_coordinat {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 20px;
+  }
+
+  .quality_service a {
+    margin-top: 12px;
+    max-width: 250px;
+  }
+
+  .link_other_filial {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 20px;
+  }
+
+  .other_filial__item_img {
+    object-fit: contain;
+  }
+
+  .other_filial__item_img img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .other_filial__item_coordinat a {
+    display: block;
+    max-width: none;
+  }
+
+  /*---контакты---*/
+
+  /*отзывы*/
+  .send__reviews button {
+    max-width: 250px;
+    align-content: center;
+  }
+
+  /*---отзывы---*/
 
   .footer__items {
     grid-template-columns: 60% 30%;
@@ -2905,6 +3063,12 @@ section.content_items {
   h4 {
     font-size: 16px;
     margin-bottom: 10px;
+  }
+  a:hover{
+    color: #D14139;
+  }
+  a:active{
+    color: #af2f29;
   }
 
   /*content-wrapper*/
@@ -3305,7 +3469,7 @@ section.content_items {
     cursor: pointer;
   }
 
-  .service__item a{
+  .service__item a {
     padding: 25px 4px;
   }
 
@@ -4071,6 +4235,11 @@ section.content_items {
   .description_text__preparation a {
     display: block;
   }
+  .doctor_info__reviews{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
   /*---страница обследования---*/
 
@@ -4404,57 +4573,273 @@ section.content_items {
   /*---акции и новости------*/
 
   /*о нас*/
-.about_top_links {
-  margin: 64px 0;
-  display: grid;
-  grid-template-columns: repeat(2, auto);
-  grid-template-rows: repeat(2, auto);
-  gap: 20px;
-}
-.bonus_prog{
-  border-radius: 35px;
-  margin-bottom: 0;
-  grid-row: 1 / 2 span;
+  .about_top_links {
+    margin: 64px 0;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    gap: 20px;
+  }
+
+  .bonus_prog {
+    border-radius: 35px;
+    margin-bottom: 0;
+    grid-row: 1 / 2 span;
+  }
+
+  .bonus_prog__wrap a,
+  .pravov_info__wrap a {
+    border-radius: 35px;
+  }
+
+  .spravka_ndfl__wrap a {
+    border-radius: 35px;
+  }
+
+  .bonus_prog__wrap h2,
+  .spravka_ndfl__wrap h2,
+  .pravov_info__wrap h2 {
+    padding: 32px;
+  }
+
+  .spravka_ndfl {
+    border-radius: 35px;
+    margin-bottom: 0;
+    min-height: 145px;
+  }
+
+  .pravov_info {
+    border-radius: 35px;
+    min-height: 145px;
+  }
+
+  .bac_border {
+    padding: 32px;
+    border-radius: 35px;
+    margin: 64px 0;
+  }
+
+  .about_asset ul {
+    padding-left: 32px;
+  }
+
+  .about_page__head {
+    margin: 64px 0 20px 0;
+  }
+
+  .equipment,
+  .text_laboratoriya,
+  .about_team {
+    margin: 64px 0;
+  }
+
+  /*---о нас---*/
+  /*бонусная программа*/
+  .bonus_card.bac_border {
+    padding: 0;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: auto;
+  }
+  .bonus_conditions__img {
+    display: block;
+  }
+
+  /* .bonus_card:nth-child(1) {
+  grid-column: 1; /* Первая колонка 
+  grid-row: 1;    /* Первая строка 
 }
 
-.bonus_prog__wrap a, .pravov_info__wrap a{
-  border-radius: 35px;
-}
-.spravka_ndfl__wrap a {
-  border-radius: 35px;
+.bonus_card:nth-child(2) {
+  grid-column: 1; /* Первая колонка 
+  grid-row: 2;    /* Вторая строка 
 }
 
-.bonus_prog__wrap h2, .spravka_ndfl__wrap h2, .pravov_info__wrap h2{
-  padding: 32px;
-}
+.bonus_card:nth-child(3) {
+  grid-column: 2; /* Вторая колонка 
+  grid-row: 1;    /* Первая строка 
+} */
+  .bonus_card p {
+    padding: 32px;
+    max-width: 70%;
+  }
 
-.spravka_ndfl{
-  border-radius: 35px;
-  margin-bottom: 0;
-  min-height: 145px;
-}
+  .bonus_card .anchor_list {
+    padding: 32px;
+    max-width: 50%;
+    margin: 0;
+  }
 
-.pravov_info{
-  border-radius: 35px;
-  min-height: 145px;
-}
+  .bonus_card img {
+    grid-column: 2;
+    grid-row: 1 / 2 span;
+  }
 
-.bac_border {
-  padding: 32px;
-  border-radius: 35px;
-  margin: 64px 0;
-}
-.about_asset ul{
-  padding-left: 32px;
-}
-.about_page__head {
-  margin: 64px 0 20px 0;
-}
-.equipment, .text_laboratoriya, .about_team {
-  margin: 64px 0;
-}
+  .bonus_if {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
 
-/*---о нас---*/
+  .sec1 p,
+  .sec2 p,
+  .sec3 p {
+    margin-top: 8px;
+  }
+
+  .bonus_conditions {
+    padding: 0;
+    border-radius: 35px;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 20px;
+    overflow: hidden;
+    /* Это предотвратит выход элементов за пределы */
+  }
+
+  .bonus_conditions__img {
+    max-height: 434px;
+    justify-self: center;
+  }
+
+  .bonus_conditions__item {
+    box-sizing: border-box;
+    border: 1.06px solid #CECECE;
+    border-radius: 22px;
+    margin: 32px 0;
+    background-color: #fff;
+  }
+
+  .bonus_conditions .bonus_conditions__item:nth-child(2) {
+    margin-bottom: 32px;
+  }
+
+  .bonus_conditions .bonus_conditions__item:nth-child(3) {
+    margin-right: 32px;
+  }
+
+  .bonus_conditions__top {
+    background-color: #F8F8F8;
+    border-radius: 22px 22px 0 0;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .bonus_conditions__top h3 {
+    margin: 0;
+  }
+
+  .bonus_conditions__buttom {
+    background-color: #fff;
+    border-radius: 0 0 22px 22px;
+    padding: 20px;
+  }
+
+  .bonus_conditions__buttom ul {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 8px;
+  }
+
+  .bonus_conditions__buttom li:nth-child(even) {
+    justify-self: center;
+  }
+
+  .how_spend_bonuses {
+    margin: 64px 0;
+  }
+
+  /*---бонусная программа---*/
+
+  /*контакты*/
+
+  .contacts_coordinat {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 20px;
+  }
+
+  .contacts_coordinat__map {
+    border-radius: 35px;
+  }
+
+  .contacts_coordinat__adress {
+    border-radius: 35px;
+    padding: 32px;
+  }
+
+
+  .quality_service {
+    margin-top: 20px;
+    background: linear-gradient(0deg, #F9C8B6, #F9C8B6),
+      linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
+    border-radius: 22px;
+    padding: 22px;
+  }
+
+  .quality_service a {
+    margin-top: 16px;
+    max-width: 250px;
+  }
+
+  .link_other_filial__item.bac_border {
+    padding: 0;
+  }
+
+  .link_other_filial {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 20px;
+  }
+
+  .link_other_filial__item {
+    /* display: grid;
+    grid-template-rows: 1fr 1fr;
+    overflow: hidden; */
+  }
+
+  .other_filial__item_img {
+    /* max-height: 50%; */
+    border-radius: 35px;
+    object-fit: contain;
+    /* display: block; */
+  }
+
+  .other_filial__item_img img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .other_filial__item_coordinat {
+    padding: 20px;
+  }
+
+  .other_filial__item_coordinat a {
+    display: block;
+    align-content: center;
+    max-width: none;
+  }
+
+  /*---контакты---*/
+  /*отзывы*/
+  .send__reviews {
+    margin: 64px 0;
+  }
+
+  .send__reviews button {
+    max-width: 250px;
+    align-items: center;
+    display: block;
+  }
+  .send__reviews .btn-grey{
+    margin: 0 auto;
+  }
+
+  /*---отзывы---*/
 
   .footer {
     padding: 52px 0;
