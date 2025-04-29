@@ -61,6 +61,39 @@ h4 {
   color: #D14741;
 }
 
+.cookie-consent {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  color: #212121;
+  padding: 20px;
+  display: none;
+  z-index: 1000;
+  border: 1.08px solid #CECECE;
+  border-radius: 22px;
+  margin: 0 30px 20px 30px;
+}
+.cookie-consent button {
+  cursor: pointer;
+  margin-top: 8px;
+  float: right;
+  margin-right: 0px;
+}
+
+.cookie-consent .close {
+  color: #cecece;
+  float: right;
+  font-size: 28px;
+  cursor: pointer;
+  padding-left: 10px;
+}
+
+.cookie-consent p {
+  padding-right: 20px;
+}
+
 
 /*все поля форм*/
 select {
@@ -353,6 +386,17 @@ a {
 }
 
 /*header*/
+
+.header__region-list li{
+  padding: 8px 0;
+  color: #D14139;
+}
+.header__region-item_nn {
+  cursor: pointer;
+}
+.header__region-nn {
+  display: none;
+}
 .header {
   padding: 15px 12px 12px 12px;
   margin: 50px 30px 20px 30px;
@@ -2604,6 +2648,29 @@ section.content_items {
     margin-bottom: 10px;
   }
 
+
+  .cookie-consent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .cookie-consent button {
+    max-width: 100px;
+    margin-left: 10px;
+    margin-top: 0;
+    margin-right: 30px;
+    float: right;
+  }
+  
+  .cookie-consent p {
+    margin: 0;
+    padding-right: 20px;
+  }
+
+
+
+
   .btn-red {
     font-weight: 400;
     font-size: 14px;
@@ -3068,6 +3135,27 @@ section.content_items {
     margin-bottom: 10px;
   }
 
+  .cookie-consent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 600px;
+    border-radius: 35px;
+    padding: 32px;
+  }
+
+  .cookie-consent button {
+    max-width: 120px;
+    margin-left: 32px;
+    margin-right: 20px;
+    float: right;
+  }
+  
+  .cookie-consent p {
+    margin: 0;
+    padding-right: 20px;
+  }
+
   a:hover {
     color: #D14139;
   }
@@ -3476,6 +3564,9 @@ section.content_items {
 
   .service__item a {
     padding: 25px 4px;
+  }
+  .service__item a:hover, .service__item a:active {
+    color: #212121;
   }
 
   .service__item:hover {

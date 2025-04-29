@@ -308,7 +308,11 @@ $(document).ready(function () {
         $('body').toggleClass('lock');
     });
 
-
+    // не срабатывает
+    $('.header__region-item_nn').click(function () {
+        console.log("Клик сработал");
+        $('.header__region-nn').toggle();
+    });
 
     // $('.accordion-item').click(function () {
     //     var $arrow = $(this).find('.arrow-bottom');
@@ -1073,6 +1077,28 @@ $(document).ready(function () {
         }
     });
 
+});
+
+
+
+// Проверяем наличие куки с согласием
+if (document.cookie.indexOf("cookieConsent=true") === -1) {
+    $("#cookieConsent").fadeIn(); // Показываем окно
+}
+
+// Обработчик кнопки согласия
+$("#acceptCookies").on("click", function() {
+    // Устанавливаем куки на 30 дней
+    var date = new Date();
+    date.setTime(date.getTime() + (30 * 24 * 60 * 60 * 1000)); // 30 дней
+    var expires = "expires=" + date.toUTCString();
+    document.cookie = "cookieConsent=true;" + expires + ";path=/"; // Устанавливаем куки
+    $("#cookieConsent").fadeOut(); // Скрываем окно
+});
+
+// Обработчик нажатия на кнопку закрытия
+$("#closeModal").on("click", function() {
+    $("#cookieConsent").fadeOut(); // Скрываем окно
 });
 
 
