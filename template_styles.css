@@ -3156,11 +3156,11 @@ section.content_items {
     padding-right: 20px;
   }
 
-  .menu__list-item a:hover, .detail_text a:hover{
+  .menu__list-item a:hover, .detail_text a:hover, .breadcrumb a:hover{
     color: #D14139;
   }
 
-  .menu__list-item a:active , .detail_text a:active{
+  .menu__list-item a:active , .detail_text a:active, .breadcrumb a:active{
     color: #af2f29;
   }
 
