@@ -47,13 +47,13 @@ function toggleArrow($arrow) {
 
 $(document).ready(function () {
 
-    new isvek.Bvi({
-        target: '.vijoin',
-        fontSize: 24,
-        theme: 'black',
-        panelFixed: true,
-        lang: 'ru-RU'
-    });
+    // new isvek.Bvi({
+    //     target: '.vijoin',
+    //     fontSize: 24,
+    //     theme: 'black',
+    //     panelFixed: true,
+    //     lang: 'ru-RU'
+    // });
 
 
     // Обработчик клика по заголовкам
@@ -312,13 +312,13 @@ $(document).ready(function () {
 
 $(document).ready(function () {
 
-    new isvek.Bvi({
-        target: '.vijoin',
-        fontSize: 24,
-        theme: 'black',
-        panelFixed: true,
-        lang: 'ru-RU'
-    });
+    // new isvek.Bvi({
+    //     target: '.vijoin',
+    //     fontSize: 24,
+    //     theme: 'black',
+    //     panelFixed: true,
+    //     lang: 'ru-RU'
+    // });
 
 
 
