@@ -3,9 +3,9 @@ function toggleArrow($arrow) {
     $arrow.toggleClass('active');
 
     if ($arrow.hasClass('active')) {
-        $arrow.css('transform', 'rotate(-450deg'); // Поворот стрелки
+        $arrow.css('transform', 'rotate(-180deg'); // Поворот стрелки
     } else {
-        $arrow.css('transform', 'rotate(90deg)'); // Возврат в исходное состояние
+        $arrow.css('transform', 'rotate(0)'); // Возврат в исходное состояние
     }
 }
 
@@ -334,7 +334,7 @@ $(document).ready(function () {
     });
 
     // $('.accordion-item').click(function () {
-    //     var $arrow = $(this).find('.arrow-bottom');
+    //     $arrow 
     //     $(this).toggleClass('active');
     //     $(this).next('.accordion-content').slideToggle();
     //     toggleArrow($arrow);
@@ -349,14 +349,18 @@ $(document).ready(function () {
 
 
     // Обрабатываем клик по расписанию
-    $('.schedule').click(function (event) {
+    $('.schedule').click(function(event) {
         $('.menu__schedule').toggleClass('active');
+        const $arrow = $(this).find('.arrow-bottom');
+        toggleArrow($arrow);
     });
-
+    
     // Обрабатываем клик по расписанию для поворота стрелки
-    $('.schedule-name-label').click(function (event) {
-        $(this).toggleClass('active');
-    });
+    // $('.schedule-name-label').click(function (event) {
+    //     $(this).toggleClass('active');
+    //     let $arrow = $(this).find('.arrow-bottom_grey');
+        
+    // });
 
     // Инициализация табов популярных услуг и услуг(по направлениям и специальностям) 
     $('.content_tab').hide();
@@ -576,6 +580,7 @@ $(document).ready(function () {
     const $popup = $('#popup');
     const $popupContent = $('#popup-content');
     const $regionToggle = $('.header__region-label'); // Селектор для переключателя региона
+    const $arrowRT = $regionToggle.find('.arrow-bottom_red');
 
     function togglePopup(url) {
         if ($popup.is(':visible')) {
@@ -602,6 +607,7 @@ $(document).ready(function () {
     $('#region-toggle').on('click', function () {
         const url = 'popups/region-change.html';
         togglePopup(url);
+        toggleArrow($arrowRT);
     });
 
     $('#button-zapis, #button-zapis-pc, #button-zapis-doctor').on('click', function () {
@@ -612,12 +618,14 @@ $(document).ready(function () {
     $('#close-popup').on('click', function () {
         $popup.css('display', 'none');
         $regionToggle.removeClass('active'); // Удаляем класс active, когда попап закрывается
+        toggleArrow($arrowRT);
     });
 
     $(window).on('click', function (e) {
         if ($(e.target).is($popup)) {
             $popup.css('display', 'none');
             $regionToggle.removeClass('active'); // Удаляем класс active, когда попап закрывается
+            toggleArrow($arrowRT);
         }
     });
 
