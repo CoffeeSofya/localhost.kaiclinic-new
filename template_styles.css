@@ -2544,8 +2544,13 @@ section.content_items {
   margin-top: 8px;
 }
 
+.other_filial {
+  margin: 32px 0;
+}
+
 .link_other_filial__item.bac_border {
   padding: 0;
+  margin: 20px 0;
 }
 
 .other_filial__item_img {
@@ -3072,6 +3077,7 @@ section.content_items {
     margin-top: 12px;
     max-width: 250px;
   }
+
 
   .link_other_filial {
     display: grid;
@@ -4882,9 +4888,13 @@ section.content_items {
     margin-top: 16px;
     max-width: 250px;
   }
+  .other_filial {
+    margin: 64px 0;
+  }
 
   .link_other_filial__item.bac_border {
     padding: 0;
+    margin: 0;
   }
 
   .link_other_filial {
