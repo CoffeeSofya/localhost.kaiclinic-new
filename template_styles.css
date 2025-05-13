@@ -3156,13 +3156,13 @@ section.content_items {
     padding-right: 20px;
   }
 
-  /* a:hover {
+  .menu__list-item a:hover, .detail_text a:hover{
     color: #D14139;
   }
 
-  a:active {
+  .menu__list-item a:active , .detail_text a:active{
     color: #af2f29;
-  } */
+  }
 
   /*content-wrapper*/
   .wrapper {
