@@ -466,8 +466,8 @@ a {
 
 .arrow-bottom {
   margin: 0 2px;
-  width: 5px;
-  height: 9px;
+  /* width: 5px; */
+  /* height: 9px; */
   cursor: pointer;
 }
 
