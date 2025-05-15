@@ -75,6 +75,7 @@ h4 {
   border-radius: 22px;
   margin: 0 30px 20px 30px;
 }
+
 .cookie-consent button {
   cursor: pointer;
   margin-top: 8px;
@@ -387,16 +388,19 @@ a {
 
 /*header*/
 
-.header__region-list li{
+.header__region-list li {
   padding: 8px 0;
   color: #D14139;
 }
+
 .header__region-item_nn {
   cursor: pointer;
 }
+
 .header__region-nn {
   display: none;
 }
+
 .header {
   padding: 15px 12px 12px 12px;
   margin: 50px 30px 20px 30px;
@@ -910,6 +914,18 @@ main {
   margin-bottom: 20px;
 }
 
+.prav_info_tabs {
+  display: flex;
+  flex-direction: column;
+  border-radius: 22px;
+  margin-bottom: 20px;
+}
+
+.prav_info_tabs__row {
+  display: flex;
+  flex-direction: column;
+}
+
 input[type="radio"] {
   display: none;
 }
@@ -922,13 +938,29 @@ input[type="radio"] {
   cursor: pointer;
 }
 
+.prav_info_tabs label {
+  padding: 9px 16px;
+  margin: 0 0 8px 0;
+  background-color: #F8F8F8;
+  border-radius: 22px;
+  cursor: pointer;
+}
+
 .tabs label:hover,
 .service_tabs label:hover {
   background-color: #ddd;
 }
 
+.prav_info label:hover {
+  background-color: #ddd;
+}
+
 .content_tab,
 .content_service_tab {
+  display: none;
+}
+
+.content_prav_info_tab {
   display: none;
 }
 
@@ -939,6 +971,11 @@ input[type="radio"] {
 }
 
 .service_tabs input[type="radio"]:checked+label {
+  background-color: #D14741;
+  color: white;
+}
+
+.prav_info_tabs input[type="radio"]:checked+label {
   background-color: #D14741;
   color: white;
 }
@@ -1630,6 +1667,7 @@ section.content_items {
   max-height: 235px;
   object-fit: cover;
   overflow: hidden;
+  border-radius: 22px;
 }
 
 .equipment_card__info {
@@ -2249,6 +2287,8 @@ section.content_items {
   margin: 32px 0;
 }
 
+
+
 .bonus_prog {
   background: linear-gradient(126.56deg, #D14741 10.02%, #F9C8B6 97.4%);
   border-radius: 22px;
@@ -2256,6 +2296,14 @@ section.content_items {
   height: 100%;
   position: relative;
   margin-bottom: 8px;
+}
+
+.bonus_prog:hover {
+  background: linear-gradient(126.56deg, #cf3d37 10.02%, #f8bda7 97.4%);
+}
+
+.bonus_prog:active {
+  background: linear-gradient(126.56deg, #c83630 10.02%, #f7b69e 97.4%);
 }
 
 .bonus_prog__wrap {
@@ -2285,12 +2333,21 @@ section.content_items {
 }
 
 .spravka_ndfl {
-  background: #4FB2C0;
+  /* background: #4FB2C0; */
+  background: linear-gradient(126.56deg, #4FB2C0 10.02%, #CFE6F5 97.4%);
   border-radius: 22px;
   height: 100%;
   min-height: 90px;
   position: relative;
   margin-bottom: 8px;
+}
+
+.spravka_ndfl:hover {
+  background: linear-gradient(126.56deg, #42abb9 10.02%, #c0def2 97.4%);
+}
+
+.spravka_ndfl:active {
+  background: linear-gradient(126.56deg, #3ea2af 10.02%, #afd5ef 97.4%);
 }
 
 .spravka_ndfl__wrap {
@@ -2307,10 +2364,10 @@ section.content_items {
   right: 0;
   bottom: 0;
   overflow: hidden;
-  background-image: url('img/fon_blue.png');
+  background-image: url('img/fon_blue1.svg');
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-position: calc(100% + 50px) calc(100% + 50px);
+  background-size: 50%;
   border-radius: 22px;
 }
 
@@ -2325,6 +2382,14 @@ section.content_items {
   height: 100%;
   min-height: 90px;
   position: relative;
+}
+
+.pravov_info:hover {
+  background: #216e9d;
+}
+
+.pravov_info:active {
+  background: #1f6792;
 }
 
 .pravov_info__wrap {
@@ -2343,8 +2408,10 @@ section.content_items {
   overflow: hidden;
   background-image: url('img/fon_blue_blue.svg');
   background-repeat: no-repeat;
-  background-position: right bottom;
+  /* background-position: right bottom; */
   border-radius: 22px;
+  background-position: calc(100% + 20px) bottom;
+  background-size: 50%;
 }
 
 .pravov_info__wrap h2 {
@@ -2674,7 +2741,7 @@ section.content_items {
     margin-right: 30px;
     float: right;
   }
-  
+
   .cookie-consent p {
     margin: 0;
     padding-right: 20px;
@@ -3163,17 +3230,21 @@ section.content_items {
     margin-right: 20px;
     float: right;
   }
-  
+
   .cookie-consent p {
     margin: 0;
     padding-right: 20px;
   }
 
-  .menu__list-item a:hover, .detail_text a:hover, .breadcrumb a:hover{
+  .menu__list-item a:hover,
+  .detail_text a:hover,
+  .breadcrumb a:hover {
     color: #D14139;
   }
 
-  .menu__list-item a:active , .detail_text a:active, .breadcrumb a:active{
+  .menu__list-item a:active,
+  .detail_text a:active,
+  .breadcrumb a:active {
     color: #af2f29;
   }
 
@@ -3578,7 +3649,9 @@ section.content_items {
   .service__item a {
     padding: 25px 4px;
   }
-  .service__item a:hover, .service__item a:active {
+
+  .service__item a:hover,
+  .service__item a:active {
     color: #212121;
   }
 
@@ -3614,10 +3687,35 @@ section.content_items {
     margin-bottom: 32px;
   }
 
+  .prav_info_tabs {
+    display: flex;
+    flex-direction: column;
+    border-radius: 35px;
+    margin-bottom: 32px;
+  }
+
+  .prav_info_tabs__row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .prav_info_tabs__row:nth-child(2) {
+    width: 52%;
+  }
+
   .tabs label,
   .service_tabs label {
     border-radius: 35px;
     padding: 12px 20px;
+  }
+
+  .prav_info_tabs label {
+    padding: 16px 24px;
+    margin: 0 0 20px 0;
+    background-color: #F8F8F8;
+    border-radius: 35px;
+    cursor: pointer;
   }
 
   .popular_services .content_items {
@@ -3629,6 +3727,18 @@ section.content_items {
     /* border: 1.08px solid #CECECE; */
     /* border-radius: 35px; */
     margin: 0 0 64px 0;
+  }
+
+  .content_prav_info_tab .content_items li {
+    margin-bottom: 12px;
+  }
+
+  .content_items a:hover {
+    color: #bf342c;
+  }
+
+  .content_items a:active {
+    color: #af2f29;
   }
 
   .content_item__show_more a {
@@ -4259,6 +4369,7 @@ section.content_items {
     max-height: 235px;
     object-fit: cover;
     overflow: hidden;
+    border-radius: 35px;
   }
 
   .equipment_card__info {
@@ -4697,6 +4808,8 @@ section.content_items {
     grid-row: 1 / 2 span;
   }
 
+
+
   .bonus_prog__wrap a,
   .pravov_info__wrap a {
     border-radius: 35px;
@@ -4895,6 +5008,7 @@ section.content_items {
     margin-top: 16px;
     max-width: 250px;
   }
+
   .other_filial {
     margin: 64px 0;
   }

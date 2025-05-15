@@ -224,236 +224,137 @@
         <main>
 
             <div class="content-wrapper">
-
                 <div class="breadcrumb">
                     <ul>
                         <li id="bx_breadcrumb_">
                             <a href="index.html" title="" itemprop="url"><span class="bread">Главная</span></a>
                             <span class="slash">/</span>
                         </li>
-                        <li><span>О нас</span></li>
+                        <li id="bx_breadcrumb_">
+                            <a href="about.html" title="" itemprop="url"><span class="bread">О нас</span></a>
+                            <span class="slash">/</span>
+                        </li>
+                        <li><span>Правовая информация</span></li>
                     </ul>
                 </div>
 
-                <h1>О нас</h1>
+                <div class="prav_info">
+                    <h1>Правовая информация</h1>
+                    <div class="prav_info_tabs">
+                        <div class="prav_info_tabs__row">
+                            <input id="prav-info-tab1" type="radio" name="prav_info_tabs">
+                            <label class="prav_info__label" for="prav-info-tab1">Лицензия</label>
 
-                <div class="about_top_links">
-                    <div class="bonus_prog">
-                        <div class="bonus_prog__wrap">
-                            <a class="btn_about" href="bonus_program.html">
-                                <h2>Бонусная программа</h2>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="spravka_ndfl">
-                        <div class="spravka_ndfl__wrap">
-                            <a class="btn_about" href="#">
-                                <h2>Получение справки для налогового вычета</h2>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="pravov_info">
-                        <div class="pravov_info__wrap">
-                            <a class="btn_about" href="prav_info.html">
-                                <h2>Правовая информация</h2>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+                            <input id="prav-info-tab2" type="radio" name="prav_info_tabs">
+                            <label class="prav_info__label" for="prav-info-tab2">Уставные документы</label>
 
-                <div class="about_history bac_border">
-                    <h2>История КайКлиник</h2>
-                    <p>Наша деятельность началась в 2010 году, когда был открыт первый филиал многопрофильного центра
-                        «СОЛО» в городе Павлово. Затем появился второй центр в Нижнем Новгороде на улице Исполкома. 
-                    </p><br>
-                    <p>В 2017 году мы сменили название и стали называться сеть медицинских центров «КайКлиник». С тех
-                        пор филиалы располагаются в разных городах Нижегородской области, а именно: в Нижнем Новгороде,
-                        Павлово, Богородске, Окском береге, Заволжье. Также в Заволжье, помимо отделения, есть медпункт
-                        на предприятии ПАО "ЗМЗ".
-                        Название «КайКлиник» связано с фамилией учредителя Кайдалова Владимира Павловича и его жены
-                        Кайдаловой Людмилы Александровны. </p><br>
-                    <p>Идея открыть современную сеть клиник появилась тогда, когда в их семье произошел неприятный
-                        случай. Они столкнулись с тем, что в маленьком провинциальном городе им не смогли провести
-                        качественную диагностику и оказать квалифицированную помощь. Это и натолкнуло на мысль, а почему
-                        бы не сделать так, чтобы современная медицина была доступна всем?</p><br>
-                    <p> Начался непростой путь к созданию уникальных медицинских центров в маленьких городах
-                        Нижегородской области. 
-                        Главный принцип работы КайКлиник — это индивидуальный подход к каждому нашему пациенту.</p><br>
-                </div>
+                            <input id="prav-info-tab3" type="radio" name="prav_info_tabs">
+                            <label class="prav_info__label" for="prav-info-tab3">Обработка персональных данных</label>
 
-                <div class="about_mission bac_border">
-                    <h2>Наша миссия</h2>
-                    <p>Самое ценное, что есть у каждого человека – это здоровье. Наша задача сохранить его и приумножить
-                        – именно этим занимается команда профессионалов центра «КайКлиник». 
-                    </p><br>
-                    <p>
-                        Мы осознаем ответственность перед каждым пациентом, действуем во благо обществу, стараемся
-                        создать атмосферу доверия и комфорта. Поэтому в своей деятельности используем только передовое
-                        оборудование, современные технологии диагностики и лечения.</p><br>
-                </div>
+                            <input id="prav-info-tab4" type="radio" name="prav_info_tabs">
+                            <label class="prav_info__label" for="prav-info-tab4">Политика конфиденциальности</label>
+                        </div>
+                        <div class="prav_info_tabs__row">
+                            <input id="prav-info-tab5" type="radio" name="prav_info_tabs">
+                            <label class="prav_info__label" for="prav-info-tab5">Законодательная карта</label>
 
-                <div class="about_asset bac_border">
-                    <h2>Наши ценности</h2>
-                    <ul>
-                        <li>Стремимся к постоянному совершенствованию знаний и навыков наших специалистов, чтобы
-                            обеспечить наилучший уход за пациентами.</li><br>
-                        <li>Гарантируем высокое качество предоставляемых услуг.</li><br>
-                        <li>Проявляем заботу и внимание к каждому пациенту, понимая, что каждый случай уникален.</li><br>
-                        <li>Внедряем новые технологии и методы лечения, чтобы предоставить нашим пациентам доступ к
-                            самым современным медицинским услугам. Врачи нашего центра постоянно проходят курсы
-                            повышения квалификации и обучение работы с современным и передовым оборудованием.</li><br>
-                        <li>Уважаем права и достоинство каждого пациента, обеспечивая конфиденциальность и соблюдение
-                            этических норм.</li><br>
-                    </ul>
-                </div>
-
-
-                <div class="building_trust">
-                    <h2>Мы заслужили Ваше доверие</h2>
-                    <div class="building_trust__items">
-                        <div class="building_trust__age">
-                            <p class="fs_large">14 лет</p>
-                            <p class="fs_midle">медицинской практики</p>
-                        </div>
-                        <div class="building_trust__filials">
-                            <p class="fs_midle">9 филиалов</p>
-                        </div>
-                        <div class="building_trust__doctors">
-                            <p class="fs_midle">253</p>
-                            <p class="fs_small">опытных врача</p>
-                        </div>
-                        <div class="building_trust__text">
-                            <p class="fs_small">С 2010 года сеть медицинских центров «КайКлиник» стала незаменимым
-                                помощником на пути к
-                                здоровой и долгой жизни для многих жителей Нижегородской области. Строим долгосрочные
-                                взаимоотношения с нашими пациентами, основанные на принципах человечности,
-                                ответственности, порядочности.</p>
-                        </div>
-                        <div class="building_trust__reviews">
-                            <p class="fs_midle">1087</p>
-                            <p class="fs_small">позитивных отзыва</p>
-                        </div>
-                        <div class="building_trust__patients">
-                            <p class="fs_midle">> 600 000</p>
-                            <p class="fs_small">довольных пациентов</p>
+                            <input id="prav-info-tab6" type="radio" name="prav_info_tabs" checked>
+                            <label class="prav_info__label" for="prav-info-tab6">Дополнительная информация</label>
                         </div>
                     </div>
                 </div>
+                <section class="content_prav_info_tab" id="content-prav-info-tab1">
+                </section>
+                <section class="content_prav_info_tab" id="content-prav-info-tab2">
+                </section>
+                <section class="content_prav_info_tab" id="content-prav-info-tab3">
+                </section>
+                <section class="content_prav_info_tab" id="content-prav-info-tab4">
+                </section>
+                <section class="content_prav_info_tab" id="content-prav-info-tab5">
+                </section>
+                <section class="content_prav_info_tab" id="content-prav-info-tab6">
+                    <div class="content_items">
 
-                <div class="about_team">
-                    <h2>О нашей команде</h2>
-                    <div class="about_team_descr bac_grey">
-                        <p>Наша команда – это профессионалы своего дела, которые объединились ради общей цели – помогать людям восстанавливать, сохранять и приумножать здоровье.
-                            Руководители центра и врачи следят за достижениями в медицине, внедряют инновации в деятельность клиники. За счет использования современного оборудования и техники нам удается с максимальной точностью поставить диагноз и назначить подходящее лечение.
-                            В медицинских центрах «КайКлиник» более 250 специалистов. Ревматологи, десткие неврологи, кардиологи, оториноларингологи, онкологи, хирурги, эндокриноги призваны сохранять и поддерживать здоровье пациентов. Прием самых маленьких пациентов ведут доктора, которые специализируются на лечении детей с момента их появления на свет.
-                            Бесперебойную работу центра обеспечивает административный персонал. Сотрудники отвечают на телефонные звонки, ведут запись пациентов на приём, оформляют документы.</p>
-                    </div>
-                    <div class="owl-carousel about_team_carousel">
-                        <div class="about_team_carousel__item">
-                            <div class="doctor_card">
-                                <div class="doctor_card__top">
-                                    <div class="doctor_card__photo">
-                                        <img src="img/image 63.png" alt="">
-                                    </div>
-                                </div>
-                                <div class="doctor_card__more_info">
-                                    <h3>Менькова Наталья Николаевна</h3>
-                                    <div class="position">
-                                        <p>Старшая медсестра</p>
-                                    </div>
-                                </div>
+                        <div class="content_item bac_grey">
+                            <div class="content_head">
+                                <h2>Вышестоящие организации</h2>
+                                <svg class="arrow-bottom arrow-bottom_grey" viewBox="0 0 5 9">
+                                    <path
+                                        d="M0.419,9.000 L0.003,8.606 L4.164,4.500 L0.003,0.394 L0.419,0.000 L4.997,4.500 L0.419,9.000 Z" />
+                                </svg>
+                            </div>
+
+                            <div class="content_item__items">
+                                <ul>
+                                    <li><a href="">Договор публичной оферты на оказание медицинских
+                                            услуг.pdf</a></li>
+                                    <li><a href="">Правила внутреннего распорядка для пациентов.pdf</a></li>
+                                    <li><a href="">Условия предоставления бесплатной медицинской помощи.pdf</a>
+                                    </li>
+                                    <li><a href="">Постановление правительства №1006.pdf </a></li>
+                                    <li><a href="">Права и обязанности граждан в сфере охраны здоровья .pdf</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="content_item bac_grey">
+                            <div class="content_head">
+                                <h2>Государственные программы</h2>
+                                <svg class="arrow-bottom arrow-bottom_grey" viewBox="0 0 5 9">
+                                    <path
+                                        d="M0.419,9.000 L0.003,8.606 L4.164,4.500 L0.003,0.394 L0.419,0.000 L4.997,4.500 L0.419,9.000 Z" />
+                                </svg>
+                            </div>
+
+                            <div class="content_item__items">
+                                <ul>
+                                    <li><a href="">Договор публичной оферты на оказание медицинских
+                                            услуг.pdf</a></li>
+                                    <li><a href="">Правила внутреннего распорядка для пациентов.pdf</a></li>
+                                    <li><a href="">Условия предоставления бесплатной медицинской помощи.pdf</a>
+                                    </li>
+                                    <li><a href="">Постановление правительства №1006.pdf </a></li>
+                                    <li><a href="">Права и обязанности граждан в сфере охраны здоровья .pdf</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="content_item bac_grey">
+                            <div class="content_head">
+                                <h2>Правила оказания медицинских услуг</h2>
+                                <svg class="arrow-bottom arrow-bottom_grey" viewBox="0 0 5 9">
+                                    <path
+                                        d="M0.419,9.000 L0.003,8.606 L4.164,4.500 L0.003,0.394 L0.419,0.000 L4.997,4.500 L0.419,9.000 Z" />
+                                </svg>
+                            </div>
+
+                            <div class="content_item__items">
+                                <ul>
+                                    <li><a href="">Договор публичной оферты на оказание медицинских
+                                            услуг.pdf</a></li>
+                                    <li><a href="">Правила внутреннего распорядка для пациентов.pdf</a></li>
+                                    <li><a href="">Условия предоставления бесплатной медицинской помощи.pdf</a>
+                                    </li>
+                                    <li><a href="">Постановление правительства №1006.pdf </a></li>
+                                    <li><a href="">Права и обязанности граждан в сфере охраны здоровья .pdf</a>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
-                </div>
+                </section>
 
 
-
-                <div class="vacancy bac_grey">
-                    <div class="vacancy__wrap">
-                        <div class="vacancy__text">
-                            <h2>Присоединяйтесь к нашей команде</h2>
-                            <a class="btn-red" href="#">Посмотреть вакансии</a>
-                        </div>
-                        <img src="img/vacancy.png" alt="">
-                    </div>
-                </div>
-
-
-                <div class="equipment about_page">
-                    <div class="about_page__head">
-                        <h2>Оборудование</h2>
-                        <a class="equipment__btn" href="#">Посмотреть все оборудование</a>
-                        <p class="bac_grey">Обеспеченность современным оборудованием позволяет КлайКлиник занимать лидирующие позиции в ранней диагностике заболеваний, тем самым добиваться лучших результатов в лечении наших пациентов.
-                            Собственный технический штат обеспечивает бесперебойную работу всей нашей системы. </p>
-                    </div>
-                    <div class="owl-carousel owl-carousel_equipment owl-theme">
-                       
-                        <div class="owl-carousel_equipment_card equipment_card">
-                            <div class="equipment_card__photo">
-                                <img src="img/Frame 355.png" alt="">
-                            </div>
-                            <div class="equipment_card__info">
-                                <h3>КТ Томограф Siemens Somatom Emotion</h3>
-                                <div class="equipment_card__min_description">
-                                    <p>КТ Томограф Siemens Somatom Emotion</p>
-                                </div>
-                                <div class="button__equipment_card">
-                                    <a href="#" class="btn-grey">Перейти</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="text_laboratoriya">
-                    <h2>Наша лаборатория</h2>
-                    <div class="researches__description">
-                        <div class="researches__description_img">
-                            <img src="img/Frame 145.png" alt="">
-                        </div>
-                        <div class="researches__description_text">
-                            <p>Диагностическое отделение специализируется на обследовании пациентов с целью оценки их
-                                физического здоровья, функционирования органов, профессиональной пригодности. Для этого
-                                применяются различные методы исследования и могут привлекаться специалисты различных
-                                профилей, чтобы выявить заболевания и определить их природу, осуществить профилактику
-                                болезней, проверить результативность лечения, а также провести медицинские осмотры. </p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- <div class="zapis_na_priem_pink">
-                    <div class="zapis_na_priem_pink_left">
-                        <h2>Записаться на прием</h2>
-                        <form class="modal_zapis_na_priem" action="" type="submit">
-                            <div class="text-field text-field_floating">
-                                <input class="text-field__input input_grey" type="name" id="" placeholder="Имя">
-                                <label class="text-field__label label_input_grey">Имя</label>
-                            </div>
-                            <div class="text-field text-field_floating">
-                                <input class="text-field__input input_grey" type="tel" id=""
-                                    placeholder="Номер телефона">
-                                <label class="text-field__label label_input_grey" for="">Номер телефона</label>
-                            </div>
-                            <div class="text-field text-field_floating">
-                                <textarea class="text-field__textarea input_grey" name="" id=""
-                                    placeholder="Примечание"></textarea>
-                                <label class="text-field__label label_input_grey" for="">Примечание</label>
-                            </div>
-
-                            <button class="btn-red" type="submit">Отправить</button>
-                        </form>
-                    </div>
-                    <div class="zapis_na_priem_pink_right">
-                        <img src="img/front-view-female-doctor-holding-clipboard 1.png" alt="">
-                    </div>
-
-                </div> -->
 
             </div>
-        </main>
+
     </div>
 
+    </main>
+    </div>
 
     <div class="footer">
         <div class="wrapper">

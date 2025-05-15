@@ -365,8 +365,11 @@ $(document).ready(function () {
     // Инициализация табов популярных услуг и услуг(по направлениям и специальностям) 
     $('.content_tab').hide();
     $('.content_service_tab').hide();
+    $('.content_prav_info_tab').hide();
+
     $('#content-tab1').show();
     $('#content-service-tab1').show();
+    $('#content-prav-info-tab6').show();
 
     $('.popular_services__label').on('click', function (event) {
         var tabId = $(this).attr('for');
@@ -379,6 +382,13 @@ $(document).ready(function () {
         var tabId = $(this).attr('for');
 
         $('.content_service_tab').hide();
+        $('#content-' + tabId).show();
+    });
+
+    $('.prav_info__label').on('click', function (event) {
+        var tabId = $(this).attr('for');
+
+        $('.content_prav_info_tab').hide();
         $('#content-' + tabId).show();
     });
 
